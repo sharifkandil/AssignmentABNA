@@ -1,3 +1,6 @@
+# Find the test approach in the TestApproach.MD file.
+
+
 # Test assignment
 
 We are looking for Automation Engineers that have the mindset "only the sky is the limit" and "automation doesn't stop at testing, it's just a beginning!" ;)
