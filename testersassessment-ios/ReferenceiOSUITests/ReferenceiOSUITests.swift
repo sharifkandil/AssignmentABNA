@@ -41,6 +41,7 @@ class ReferenceiOSUITests: XCTestCase {
             currencyScreenRobot.takeScreenshot()
         }
 
+        //taking a screenshot of testresult for reference
         let screenshot = app.screenshot()
         let attachment = XCTAttachment(screenshot: screenshot)
         attachment.name = "Screenshot for reference"
@@ -59,7 +60,7 @@ class ReferenceiOSUITests: XCTestCase {
             currencyScreenRobot.tapButton()
 
         }
-        runActivity("Then label contains a €, is not equal to initial value and represents a value >= 1000000") { _ in
+        runActivity("Then label contains a €, is not equal to initial value and represents a value >= 1000") { _ in
             currencyScreenRobot.labelDisplaysCurrency()
         }
 
@@ -91,6 +92,7 @@ class ReferenceiOSUITests: XCTestCase {
         runActivity("Given the app is open the button performance is acceptable") { _ in
             measure {
                 currencyScreenRobot.tapButton()
+                currencyScreenRobot.labelDisplaysCurrency()
             }
         }
     }
@@ -114,13 +116,11 @@ class ReferenceiOSUITests: XCTestCase {
         }
     }
 
-    //    ideas to extend:
-    // Add screenshot comparison test for UI layout tests and Locale test
+    //    Ideas for future enhance:
+    //    Add screenshot comparison test for UI layout tests and Locale test
     //    changel locale in testplan:
 
     //    func testChangeLocaleAndLanguage(){
-    //        let label = app.staticTexts["label"]
-    //        let button = app.buttons["Button"]
     //
     //        runActivity("Given the app is started with lokale UK the app still represents app lokale currency NL - Euros") { _ in
     //            app.launchArguments = [
@@ -132,12 +132,7 @@ class ReferenceiOSUITests: XCTestCase {
     //                "-UIPreferredContentSizeCategoryName",
     //                "UICTContentSizeCategoryAccessibilityXL"
     //            ]
-    //            app.launch()
-    //            button
-    //                .wait(until: \.isHittable)
-    //                .tap()
-    //            XCTAssertNotEqual(label.label, "Hello")
-    //            XCTAssertNotNil(label.label.range(of:"€"))
+    //            app.launch()  
     //        }
     //    }
 }

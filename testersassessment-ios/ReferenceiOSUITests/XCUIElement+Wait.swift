@@ -111,7 +111,7 @@ extension XCUIElement {
     func wait(
         until keyPath: KeyPath<XCUIElement, Bool>,
         timeout: TimeInterval = waitTimeout,
-        message: @autoclosure () -> String = "",
+        message: @autoclosure () -> String = "wait to long",
         file: StaticString = #file,
         line: UInt = #line
     ) -> Self {

@@ -30,7 +30,7 @@ class CurrencyScreenRobot {
         XCTAssertTrue(label.exists, "Label does not exist", file: file, line: line)
         XCTAssert(app.staticTexts[Identifier.defaultLabelName].exists)
         XCTAssertFalse(label.label.isEmpty)
-        XCTAssertEqual(label.label, "Hello")
+        XCTAssertEqual(label.label, Identifier.defaultLabelName)
         return self
     }
 
@@ -40,7 +40,7 @@ class CurrencyScreenRobot {
         XCTAssertTrue(label.exists, "Label does not exist", file: file, line: line)
         XCTAssertFalse(label.label.isEmpty)
         XCTAssertNotNil(label.label.range(of:"€"))
-        XCTAssertNotEqual(label.label,"Hello")
+        XCTAssertNotEqual(label.label,Identifier.defaultLabelName)
 
         let removeCharacters: Set<Character> = [" ", "€", "."]
         var labelWithout = label.label
