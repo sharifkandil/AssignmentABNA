@@ -16,8 +16,8 @@
 		05D03C98224BBCCC005F6F05 /* CurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D03C97224BBCCC005F6F05 /* CurrencyHelper.swift */; };
 		05D03C9A224BBDC2005F6F05 /* CurrencyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D03C99224BBDC2005F6F05 /* CurrencyHelperTests.swift */; };
 		37ACE5B528B9163300D3D3F1 /* XCUIElement+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACE5B328B9162600D3D3F1 /* XCUIElement+Wait.swift */; };
-		37ACE5B728B9182D00D3D3F1 /* XCTestCase+runActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACE5B628B9182D00D3D3F1 /* XCTestCase+runActivity.swift */; };
 		37ACE5BA28BD196300D3D3F1 /* CurrencyScreenRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACE5B928BD196300D3D3F1 /* CurrencyScreenRobot.swift */; };
+		37ACE5BC28BE2B4600D3D3F1 /* XCTestCase+runActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACE5BB28BE2B4600D3D3F1 /* XCTestCase+runActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		05D03C97224BBCCC005F6F05 /* CurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelper.swift; sourceTree = "<group>"; };
 		05D03C99224BBDC2005F6F05 /* CurrencyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelperTests.swift; sourceTree = "<group>"; };
 		37ACE5B328B9162600D3D3F1 /* XCUIElement+Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Wait.swift"; sourceTree = "<group>"; };
-		37ACE5B628B9182D00D3D3F1 /* XCTestCase+runActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCTestCase+runActivity.swift"; path = "../../../sandboxes/mobile-ios/hybrid/ios/MobileBanking/E2ETests/Extensions/XCTestCase+runActivity.swift"; sourceTree = "<group>"; };
 		37ACE5B828BA2C4400D3D3F1 /* TestApproach.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TestApproach.md; sourceTree = "<group>"; };
 		37ACE5B928BD196300D3D3F1 /* CurrencyScreenRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyScreenRobot.swift; sourceTree = "<group>"; };
+		37ACE5BB28BE2B4600D3D3F1 /* XCTestCase+runActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+runActivity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +130,11 @@
 		05D03C88224BA0FD005F6F05 /* ReferenceiOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				37ACE5B628B9182D00D3D3F1 /* XCTestCase+runActivity.swift */,
 				37ACE5B328B9162600D3D3F1 /* XCUIElement+Wait.swift */,
 				05D03C89224BA0FD005F6F05 /* ReferenceiOSUITests.swift */,
 				05D03C8B224BA0FD005F6F05 /* Info.plist */,
 				37ACE5B928BD196300D3D3F1 /* CurrencyScreenRobot.swift */,
+				37ACE5BB28BE2B4600D3D3F1 /* XCTestCase+runActivity.swift */,
 			);
 			path = ReferenceiOSUITests;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37ACE5B728B9182D00D3D3F1 /* XCTestCase+runActivity.swift in Sources */,
+				37ACE5BC28BE2B4600D3D3F1 /* XCTestCase+runActivity.swift in Sources */,
 				37ACE5BA28BD196300D3D3F1 /* CurrencyScreenRobot.swift in Sources */,
 				37ACE5B528B9163300D3D3F1 /* XCUIElement+Wait.swift in Sources */,
 				05D03C8A224BA0FD005F6F05 /* ReferenceiOSUITests.swift in Sources */,
